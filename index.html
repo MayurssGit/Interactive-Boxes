@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+    <section class="mainSection"> 
+        <hr>
+        <div class="heading">YAY! It's BOGO</div>
+        <div class="offerCard mt-2" onclick="selectRadio(this)">
+            
+            <div class="headSection">
+                <div class="leftHead">
+                    <div class="" style="display: flex;gap: 5px;">
+                        <input type="radio" name="offer" id="oneUnit">
+                        <div>
+                            <label for="" class="offerlabel">1 Unit <span class="offerBadge">10% off</span></label>
+                            <p class="priceTitle">Standard Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightHead">
+                    <p class="offPrice">$10.00 USD</p>
+                    <del class="Price">$12.00 USD</del>
+
+                </div>                
+            </div>
+            <div class="cardBody d-none" id="oneUnitTable">
+                    <table style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                            <td></td>
+                            <td>Size</td>
+                            <td>Colour</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                   <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                  <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+         <div class="offerCard active" onclick="selectRadio(this)">
+            <div class="mainTag">Most Popular</div>
+            <div class="headSection">
+                <div class="leftHead">
+                    <div>
+                        <input type="radio" name="offer" id="twoUnit" checked>
+                        <label for="" class="offerlabel">2 Unit <span class="offerBadge">20% off</span></label>
+                    </div>
+                </div>
+                <div class="rightHead">
+                    <p class="offPrice">$18.00 USD</p>
+                    <del class="Price">$24.00 USD</del>
+
+                </div>                
+            </div>
+            <div class="cardBody" id="twoUnitTable">
+                    <table style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                            <td></td>
+                            <td>Size</td>
+                            <td>Colour</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                   <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+         <div class="offerCard" onclick="selectRadio(this)">
+           
+            <div class="headSection">
+                <div class="leftHead">
+                    <div>
+                        <input type="radio" name="offer" id="threeUnit">
+                        <label for="" class="offerlabel">3 Unit <span class="offerBadge">30% off</span></label>
+                    </div>
+                </div>
+                <div class="rightHead">
+                    <p class="offPrice">$24.00 USD</p>
+                    <del class="Price">$30.00 USD</del>
+
+                </div>                
+            </div>
+            <div class="cardBody d-none" id="threeUnitTable">
+                    <table style="font-size: 13px;">
+                        <thead>
+                            <tr>
+                            <td></td>
+                            <td>Size</td>
+                            <td>Colour</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                   <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>#1</td>
+                                <td>                                
+                                <select class="formInput" name="Size" id="size">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                </select>
+                                </td>
+                                   <td>
+                                <select class="formInput" name="colour" id="size">
+                                <option value="Purple">Purple</option>
+                                <option value="Red">Red</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+
+        <div class="footer">
+            <div class="totalPrice">
+                <span>Free Delivery</span>
+            <p class="finalAmt">Total: $18.00 USD</p>
+            </div>
+            <button class="btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+            <p class="Poweredby">@ Powered by Pumper</p>
+        </div>
+
+
+        
+
+    </section>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
