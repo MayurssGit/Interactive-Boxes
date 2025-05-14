@@ -45,7 +45,7 @@ body {
     position: absolute;
     left: -3px;
     top: 2px;
-    transform: rotateZ(28deg);
+    transform: rotateZ(22deg);
     z-index: -1;
 }
 .mainTag::after{
@@ -56,7 +56,7 @@ body {
     position: absolute;
     right: -3px;
     top: 2px;
-    transform: rotateZ(-28deg);
+    transform: rotateZ(-22deg);
     z-index: -1;
 }
 .offerCard{
